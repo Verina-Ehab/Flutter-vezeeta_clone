@@ -9,45 +9,52 @@ class TextThemeManager {
   TextThemeManager._();
 
   // -- Customized Light Text Theme
+  // to use it "Theme.of(context).textTheme.bodyMedium"
   static TextTheme lightTextTheme = TextTheme(
-    //for headlines
+    //Headlines_font 32_BlackBold
+    headlineLarge: const TextStyle().copyWith(
+        fontSize: 32.0,
+        fontWeight: FontWeight.w600,
+        color: ColorsManager.black),
+    //Headlines_font 24_BlackBold
+
     headlineMedium: const TextStyle().copyWith(
         fontSize: 24.0,
         fontWeight: FontWeight.w600,
         color: ColorsManager.black),
-    //for buttons
+    //Buttons_font 18_WhiteBold
     headlineSmall: const TextStyle().copyWith(
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
         color: ColorsManager.white),
 
-    //for black text
+    //Text_font 14_BlackBold
     bodyLarge: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
         color: ColorsManager.black),
-    //for grey text
+    //Text_font 14_Grey
     bodyMedium: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.grey),
-    //for purple text
+    //Text_font 24_MainColorBold
     bodySmall: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
         color: ColorsManager.mainPurple),
 
-    //for light grey text
+    //Text_font 14_LightGrey
     labelLarge: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.greylight),
-    //for error text
+    //Text_font 12_Red
     labelMedium: const TextStyle().copyWith(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.red),
-    //for snackbar text
+    //snackbar_text 12_White
     labelSmall: const TextStyle().copyWith(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
@@ -56,41 +63,47 @@ class TextThemeManager {
 
   // -- Customized Dark Text Theme
   static TextTheme darkTextTheme = TextTheme(
-    // headlineLarge: const TextStyle().copyWith(fontSize: 32.0, fontWeight: FontWeight.bold, color: MyColors.white),
+    //Headlines_font 32_WhiteBold
+    headlineLarge: const TextStyle().copyWith(
+        fontSize: 32.0,
+        fontWeight: FontWeight.w600,
+        color: ColorsManager.white),
+    //Headlines_font 24_WhiteBold
     headlineMedium: const TextStyle().copyWith(
         fontSize: 24.0,
         fontWeight: FontWeight.w600,
         color: ColorsManager.white),
+    //Buttons_font 18_WhiteBold
     headlineSmall: const TextStyle().copyWith(
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
         color: ColorsManager.white),
-
-    // titleLarge: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.bold, color: MyColors.white),
-    // titleMedium: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w500, color: MyColors.white),
-    // titleSmall: const TextStyle().copyWith(fontSize: 16.0, fontWeight: FontWeight.w400, color: MyColors.white),
-
+//Text_font 14_WhiteBold
     bodyLarge: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
         color: ColorsManager.white),
+    //Text_font 14_Grey
     bodyMedium: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.grey),
+    //Text_font 24_MainColorBold
     bodySmall: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
         color: ColorsManager.mainPurple),
-
+//Text_font 14_LightGrey
     labelLarge: const TextStyle().copyWith(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.greylight),
+    //Text_font 12_Red
     labelMedium: const TextStyle().copyWith(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
         color: ColorsManager.red),
+    //snackbar_text 12_White
     labelSmall: const TextStyle().copyWith(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
