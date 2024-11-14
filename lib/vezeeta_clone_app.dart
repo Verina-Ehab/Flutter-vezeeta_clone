@@ -6,6 +6,7 @@ import 'core/routing/app_router.dart';
 import 'core/themes/theme.dart';
 
 class VezeetaCloneApp extends StatelessWidget {
+  
   final AppRouter appRouter;
   const VezeetaCloneApp({super.key, required this.appRouter});
 
