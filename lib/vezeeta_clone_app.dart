@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/constants/sizes.dart';
 import 'core/routing/app_router.dart';
+import 'core/routing/routes.dart';
 import 'core/themes/theme.dart';
 
 class VezeetaCloneApp extends StatelessWidget {
@@ -21,6 +22,7 @@ class VezeetaCloneApp extends StatelessWidget {
         theme: AppThemeManager.lightTheme,
         darkTheme: AppThemeManager.darkTheme,
         onGenerateRoute: appRouter.generateRoute,
+        initialRoute: Routes.onBoardingScreen ,
         // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       ),
     );
